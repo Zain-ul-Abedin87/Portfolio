@@ -1,0 +1,19 @@
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+.greet-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+.greeting-main {
+  display: flex;
+}
+.greet-main > * {
+    flex: 1;
+    margin-bottom: 30px;
+}
