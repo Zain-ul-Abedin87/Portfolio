@@ -11,5 +11,17 @@ const aboutMe = {
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true, // Set false to hide this section, defaults to trueF
 };
+const socialMediaLinks = {
+  github: "https://github.com/Zain-ul-Abedin87",
+  linkedin: "https://www.linkedin.com/in/zain-ul-abedin-008/",
+  gmail: "zainulabedin668@gmail.com",
+  gitlab: "https://github.com/Zain-ul-Abedin87",
+  facebook: "https://www.facebook.com/zain.ulabedin.1401/",
+  medium: "https://medium.com/@zainulabedin668",
+  stackoverflow: "https://stackoverflow.com/users/story/18041509",
+  // Instagram, Twitter and Kaggle are also supported in the links!
+  // To customize icons and social links, tweak src/components/SocialMedia
+  display: true // Set true to display this section, defaults to false
+}
 
-export { aboutMe,illustration };
+export { aboutMe,illustration,socialMediaLinks };

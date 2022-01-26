@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
-import { aboutMe,illustration } from "../Portfolio/Portfolio";
+import { aboutMe, illustration } from "../Portfolio/Portfolio";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
 import "./Greeting.scss";
-import img1 from "../../assest/images/manOnTable.svg"
+import img1 from "../../assest/images/manOnTable.svg";
 import landingPerson from "../../assest/lottie/landingPerson.json";
 import DisplayLottie from "../displayLoittli/Display";
+import SocialMedia from "../socialMedia/SocialMedia";
 const Greeting = () => {
   const { isDark } = useContext(StyleContext);
   return (
@@ -19,19 +20,24 @@ const Greeting = () => {
               {aboutMe.title}
               <span className="wave-emoji">{emoji("👋")}</span>
             </h1>
-            <p  className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }>{aboutMe.subTitle}</p>
+            <p
+              className={
+                isDark
+                  ? "dark-mode greeting-text-p"
+                  : "greeting-text-p subTitle"
+              }
+            >
+              {aboutMe.subTitle}
+            </p>
+            <SocialMedia/>
           </div>
         </div>
         <div className="greeting-image-div">
-          {
-            illustration.animated ?   (<DisplayLottie animationData={landingPerson}/>):(<img alt="" src={img1}/>)
-          }
-        
-
+          {illustration.animated ? (
+            <DisplayLottie animationData={landingPerson} />
+          ) : (
+            <img alt="" src={img1} />
+          )}
         </div>
       </div>
     </div>
