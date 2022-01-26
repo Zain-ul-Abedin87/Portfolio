@@ -19,7 +19,11 @@ const Greeting = () => {
               {aboutMe.title}
               <span className="wave-emoji">{emoji("👋")}</span>
             </h1>
-            <p>{aboutMe.subTitle}</p>
+            <p  className={
+                  isDark
+                    ? "dark-mode greeting-text-p"
+                    : "greeting-text-p subTitle"
+                }>{aboutMe.subTitle}</p>
           </div>
         </div>
         <div className="greeting-image-div">
