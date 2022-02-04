@@ -1,0 +1,18 @@
+@import "../../_globalColor";
+
+.skill-main-div {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.skills-text-div {
+  margin-left: 50px;
+}
+.skill-main-div > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.skills-image-div > img {
+  max-width: 100%;
+  height: auto;
+}

@@ -4,6 +4,7 @@ import { StyleProvider } from "../../contexts/StyleContext";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 import "./Main.scss";
 import Greeting from "../Greeting/Greeting";
+import Skills from "../Skills/Skills";
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   console.log(darkPref);
@@ -17,6 +18,7 @@ const Main = () => {
       <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
         <Header />
         <Greeting/>
+        <Skills/>
       </StyleProvider>
     </div>
   );

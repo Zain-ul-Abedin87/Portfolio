@@ -14,11 +14,29 @@
 
 .dark-menu li a {
   color: $textColorDark !important;
+  position: relative;
+  
 }
 
-.dark-menu li a:hover {
-  background-color: $buttonColor !important;
+.headerCategory::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: 3px;
+  bottom: 0;
+  left: 5;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: top left;
 }
+.headerCategory:hover::before {
+  transform: scaleX(1);
+}
+// .dark-menu li a:hover {
+//   background-color: $buttonColor !important;
+// }
 
 .header {
   background-color: $lightBackground1;
@@ -47,7 +65,7 @@
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: $headerHoverBG;
+  // background-color: $headerHoverBG;
 }
 
 .header .logo {

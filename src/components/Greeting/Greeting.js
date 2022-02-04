@@ -7,6 +7,8 @@ import img1 from "../../assest/images/manOnTable.svg";
 import landingPerson from "../../assest/lottie/landingPerson.json";
 import DisplayLottie from "../displayLoittli/Display";
 import SocialMedia from "../socialMedia/SocialMedia";
+import Button from "../../elements/Button/Button";
+import Typed from 'react-typed';
 const Greeting = () => {
   const { isDark } = useContext(StyleContext);
   return (
@@ -17,8 +19,13 @@ const Greeting = () => {
             <h1
               className={isDark ? "dark-mood greeting-text" : "greeting-text"}
             >
-              {aboutMe.title}
-              <span className="wave-emoji">{emoji("👋")}</span>
+              <Typed strings ={[aboutMe.title]}
+                 typeSpeed={40}
+                 backSpeed={50}
+                //  loop
+              />
+              {/* {aboutMe.title} */}
+              {/* <span className="wave-emoji">{emoji("👋")}</span> */}
             </h1>
             <p
               className={
@@ -30,6 +37,16 @@ const Greeting = () => {
               {aboutMe.subTitle}
             </p>
             <SocialMedia/>
+            <div className="button-greeting-div">
+                <Button text="Contact me" href="#contact" />
+                {/* {aboutMe.resumeLink && ( */}
+                  <Button
+                    text="See my resume"
+                    newTab={true}
+                    href={aboutMe.resumeLink}
+                  />
+                {/* )} */}
+              </div>
           </div>
         </div>
         <div className="greeting-image-div">
