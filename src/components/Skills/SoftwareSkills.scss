@@ -10,22 +10,29 @@
   text-align: center;
   color: red;
 }
-.software-skill-inline{
-    display: inline-block;
+.icon-bg {
+  // background-color: white;
+  // border: 5px solid red;
+  padding: 10px;
+  // border-radius: 50%;
+}
+
+.software-skill-inline {
+  display: inline-block;
   margin-right: 20px;
-  margin-bottom: 20px;
+  // margin-bottom: 10px;
 }
 .software-skill-inline > i {
-    color: $subTitle;
-  }
-  
-  .software-skill-inline > i:hover {
-    color: $skillsColor;
-  }
-  .software-skill-inline > p {
-    color: $subTitle;
-    font-size: 10px;
-  }
-  .software-skill-inline > i:hover ~ p {
-    color: $skillsColor;
-  }
+  color: $subTitle;
+}
+
+.software-skill-inline > i:hover {
+  color: $skillsColor;
+}
+.software-skill-inline > p {
+  color: $subTitle;
+  font-size: 20px;
+}
+.software-skill-inline > i:hover ~ p {
+  color: $skillsColor;
+}
