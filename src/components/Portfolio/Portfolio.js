@@ -45,39 +45,39 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "html-5",
-      fontAwesomeClassname: <FaHtml5/>
+      fontAwesomeClassname: <FaHtml5 color="#f06529"/>
     },
     {
       skillName: "css3",
-      fontAwesomeClassname: <FaCss3Alt/>
+      fontAwesomeClassname: <FaCss3Alt color="#2965f1"/>
     },
     {
       skillName: "sass",
-      fontAwesomeClassname: <FaSass/>
+      fontAwesomeClassname: <FaSass color="#cc6699"/>
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: <FaJs/>
+      fontAwesomeClassname: <FaJs color="#f0db4f "/>
     },
     {
       skillName: "reactjs",
-      fontAwesomeClassname: <FaReact/>
+      fontAwesomeClassname: <FaReact color="#61DBFB"/>
     },
     {
       skillName: "nodejs",
-      fontAwesomeClassname: <FaNode/>
+      fontAwesomeClassname: <FaNode color="#68a063"/>
     },
     {
       skillName: "Express",
-      fontAwesomeClassname: <FaNodeJs/>
+      fontAwesomeClassname: <FaNodeJs color="#68a063"/>
     },
     {
       skillName: "Mongodb",
-      fontAwesomeClassname: <DiMongodb/>
+      fontAwesomeClassname: <DiMongodb color="#3FA037"/>
     },
     {
       skillName: "React Native",
-      fontAwesomeClassname: <FaReact/>
+      fontAwesomeClassname: <FaReact color="#61DBFB"/>
     },
     
   ],

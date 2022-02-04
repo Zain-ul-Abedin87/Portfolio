@@ -10,7 +10,7 @@ const SoftwareSkills = () => {
           {skillsSection.softwareSkills.map((item, index) => {
             return (
               <li key={index} className="software-skill-inline" name={item.skillName}>
-                <i>{item.fontAwesomeClassname}</i>
+                <i >{item.fontAwesomeClassname}</i>
                 <p>{item.skillName}</p>
               </li>
             );
