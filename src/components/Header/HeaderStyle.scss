@@ -30,16 +30,17 @@
   transform: scaleX(0);
   transition: transform 0.3s ease;
   transform-origin: top left;
+  // border-color: red;
 }
 .dark-headerCategory:hover::before {
   transform: scaleX(1);
 }
 
-.headerCategory::before{
-  content: "";
-  position: absolute;
+.light-headerCategory::after{
+  content: "";  
+  // position: absolute;
   display: block;
-  width: 80%;
+  width: "80%";
   height: 3px;
   bottom: 0;
   left: 5;
@@ -47,8 +48,9 @@
   transform: scaleX(0);
   transition: transform 0.3s ease;
   transform-origin: top left;
+  margin-top: 10px;
 }
-.headerCategory:hover::before {
+.light-headerCategory:hover::after {
   transform: scaleX(1);
 }
 // .dark-menu li a:hover {
@@ -78,6 +80,7 @@
   padding: 15px 20px;
   color: $textColor;
   text-decoration: none;
+  position: relative;
 }
 
 .header li a:hover,
