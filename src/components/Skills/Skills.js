@@ -14,9 +14,14 @@ const Skills = () => {
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skill-main-div">
-        <div className="skills-image-div">
+        <div
+          className="skills-image-div"
+          
+          // data-aos-offset="300"
+          // data-aos-easing="ease-in-sine"
+        >
           {illustration.animated ? (
-            <DisplayLottie animationData={codingPerson} />
+            <DisplayLottie animationData={codingPerson} data-aos="zoom-in" />
           ) : (
             <img
               alt="Man Working"
@@ -24,10 +29,15 @@ const Skills = () => {
             ></img>
           )}
         </div>
-        <div className="skills-text-div">
-             <h1>{skillsSection.title}</h1>
-             <p>{skillsSection.subTitle}</p>
-             <SoftwareSkills/>
+        <div
+          className="skills-text-div"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
+          <h1>{skillsSection.title}</h1>
+          <p>{skillsSection.subTitle}</p>
+          <SoftwareSkills />
         </div>
       </div>
     </div>

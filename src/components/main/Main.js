@@ -5,6 +5,11 @@ import { useLocalStorage } from "../../hooks/useLocalStorage";
 import "./Main.scss";
 import Greeting from "../Greeting/Greeting";
 import Skills from "../Skills/Skills";
+import Education from "../Education/Education";
+import WorkExperience from "../Experiences/WorkExperience";
+import Projects from "../Projects/Projects"
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Profile from "../Profile/Profile"
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   console.log(darkPref);
@@ -14,13 +19,23 @@ const Main = () => {
     console.log(isDark);
   };
   return (
-    <div className={isDark ? "dark-mood" : null}>
-      <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
-        <Header />
-        <Greeting/>
-        <Skills/>
-      </StyleProvider>
-    </div>
+    // <BrowserRouter>
+      <div className={isDark ? "dark-mood" : null}>
+        <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
+          <Header />
+          {/* <Routes>
+            <Route path="/" element={<Greeting />}/> */}
+            <Greeting />
+            <Skills/>
+            <Education/>
+            <WorkExperience/>
+            <Projects/>
+            <Profile/>
+             {/* <Route path="/skills" element={ <Skills />}/> */}
+          {/* </Routes> */}
+        </StyleProvider>
+      </div>
+    // </BrowserRouter>
   );
 };
 
