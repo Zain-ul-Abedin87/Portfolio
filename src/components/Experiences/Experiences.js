@@ -75,7 +75,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.desc}
         </p>
-        <ul>
+        <ul style={{lineHeight:"30px",fontSize:"18px"}}>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
       </div>

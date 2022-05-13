@@ -1,13 +1,13 @@
 @import "../../_globalColor";
 
 .profile-image {
-  border-radius: 50%;
-  border: 0.5rem solid $githubProfileCardBorder;
+  border-radius: 18%;
+  border: 0.5rem solid #d9dbdf;
   margin-left: auto;
   width: 100%;
-  max-width: 350px;
+  max-width: 348px;
   height: auto;
-  box-shadow: $lightBoxShadow 0 30px 30px -30px;
+  box-shadow: rgb(0 0 0 / 10%) 0 30px 30px -30px;
   transition: all 0.3s ease-out;
 }
 

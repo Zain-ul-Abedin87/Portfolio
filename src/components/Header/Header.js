@@ -26,7 +26,7 @@ const Header = () => {
         <ul className="menu">
           <li>
             <a
-              href="skills"
+              href="#skills"
               className={
                 isDark ? "dark-headerCategory" : "light-headerCategory"
               }
@@ -36,7 +36,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#experience"
+              href="#education"
               className={
                 isDark ? "dark-headerCategory" : "light-headerCategory"
               }
@@ -46,7 +46,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#opensource"
+              href="#experience"
               className={
                 isDark ? "dark-headerCategory" : "light-headerCategory"
               }
@@ -56,7 +56,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#contact"
+              href="#projects"
               className={
                 isDark ? "dark-headerCategory" : "light-headerCategory"
               }

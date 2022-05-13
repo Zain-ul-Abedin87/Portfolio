@@ -4,7 +4,7 @@ import SocialMedia from "../socialMedia/SocialMedia";
 import {contactInfo} from "../Portfolio/Portfolio";
 import emoji from "react-easy-emoji";
 import {Fade} from "react-reveal";
-import img from "../../assest/images/img1.jpg"
+import img from "../../assest/images/img03.png"
 
 export default function Profile({prof}) {
 //   if (prof.isHireable) {
@@ -15,9 +15,11 @@ export default function Profile({prof}) {
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="contact">
-        <h1 className="prof-title">Reach Out to me!</h1>
+        
         <div className="row">
+        
           <div className="main-content-profile">
+          <h1 className="prof-title">Reach Out to me!</h1>
             <div className="blog-header">
               <p className="subTitle blog-subtitle">{contactInfo.subtitle}</p>
             </div>

@@ -29,8 +29,12 @@
 .software-skill-inline > i:hover {
   color: $skillsColor;
 }
-.software-skill-inline > p {
+.skill_name_Dark {
   color: white;
+  font-size: 20px;
+}
+.skill_name{
+  color: black;
   font-size: 20px;
 }
 .software-skill-inline > i:hover ~ p {

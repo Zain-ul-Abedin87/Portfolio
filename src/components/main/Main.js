@@ -12,11 +12,11 @@ import Projects from "../Projects/Projects"
 import Profile from "../Profile/Profile"
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-  console.log(darkPref);
+  // console.log(darkPref);
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
   const changeTheme = () => {
     setIsDark(!isDark);
-    console.log(isDark);
+    // console.log(isDark);
   };
   return (
     // <BrowserRouter>

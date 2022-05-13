@@ -1,13 +1,13 @@
-import React, {createRef, useContext} from "react";
-import {Fade, Slide} from "react-reveal";
+import React, { createRef, useContext } from "react";
+import { Fade, Slide } from "react-reveal";
 import "./EducationCard.scss";
 import StyleContext from "../../contexts/StyleContext";
 import logo from "../../assest/images/unilogo.png";
 
-export default function EducationCard({school}) {
+export default function EducationCard({ school }) {
   const imgRef = createRef();
 
-  const GetDescBullets = ({descBullets}) => {
+  const GetDescBullets = ({ descBullets }) => {
     return descBullets
       ? descBullets.map((item, i) => (
           <li key={i} className="subTitle">
@@ -16,7 +16,7 @@ export default function EducationCard({school}) {
         ))
       : null;
   };
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
 
   if (!school.logo)
     console.error(`Image of ${school.name} is missing in education section`);
@@ -27,7 +27,7 @@ export default function EducationCard({school}) {
           <div className="education-card-left">
             <img
               crossOrigin={"anonymous"}
-            //   ref={imgRef}
+              //   ref={imgRef}
               className="education-roundedimg"
               src={logo}
               alt={school.schoolName}
@@ -39,17 +39,17 @@ export default function EducationCard({school}) {
             <div className="education-text-details">
               <h5
                 className={
-                  isDark
-                    ? "dark-mood education-text-subHeader"
-                    : "education-text-subHeader"
+                  isDark ? "education-text-dark" : "education-text-subHeader"
                 }
               >
                 {school.subHeader}
               </h5>
               <p
-                className={`${
-                  isDark ? "dark-mode" : ""
-                } education-text-duration`}
+                className={
+                  isDark
+                    ? "education-text-duration-dark"
+                    : "education-text-duration"
+                }
               >
                 {school.duration}
               </p>
