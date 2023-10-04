@@ -22,6 +22,8 @@ export default function Profile({prof}) {
           <h1 className="prof-title">Reach Out to me!</h1>
             <div className="blog-header">
               <p className="subTitle blog-subtitle">{contactInfo.subtitle}</p>
+              <p className="subTitle blog-subtitle">{contactInfo.number}</p>
+              <p className="subTitle blog-subtitle">{contactInfo.email_address}</p>
             </div>
             {/* <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2> */}
             {/* {prof.location !== null && ( */}

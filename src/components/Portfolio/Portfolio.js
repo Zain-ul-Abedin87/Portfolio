@@ -11,6 +11,12 @@ import {
 import { DiMongodb } from "react-icons/di";
 import logo from "../../assest/images/Amentotech.jpg";
 import idea94 from "../../assest/images/idea94.jpg";
+import workreap from "../../assest/images/workreap.webp";
+import guupy from "../../assest/images/guppy.webp";
+import doctreat from "../../assest/images/doctreat.webp";
+import servento from "../../assest/images/servento.webp";
+import taskly from "../../assest/images/taskly.webp";
+// import idea94 from "../../assest/images/idea94.jpg";
 import GamicaCloud from "../../assest/images/gamica.jpg";
 
 const illustration = {
@@ -123,13 +129,15 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "React JS & React Native Developer",
-      company: "Amentotech",
+      role: "React Native & React js Developer",
+      company: "Amento Tech",
       companylogo: logo,
-      date: "September 2020 – Present",
+      date: "September 2021 – Present",
       // desc: "Working as React And React Native Developer at Amentotech.Worked on the Numerous Mobile Apps that were sold on ThemeForest.  ",
       descBullets: [
-        "Worked as Web and Mobile apps developer, done 3 Mobile Apps by using React native Js+Redux with Material UI(React native js)",
+        "I have extensive experience in mobile app development, utilizing cross-platform frameworks to create exceptional mobile applications. I've successfully developed and deployed five feature-rich mobile apps, leveraging the power of cross-platform technology to deliver outstanding user experiences. These apps have been designed to function seamlessly across multiple platforms, ensuring broad accessibility and user engagement.",
+        "Integrating push notifications to enhance user engagement and communication",
+        "Utilizing Socket.IO for real-time communication and interactive features in mobile apps",
         "Implementing the RESTful API using The Redux and Redux toolkit for state management",
         "Successfully completed a project based on class base component and converted it into a Functional component using Hooks on the latest React Native version.",
         "Designed and developed reusable components",
@@ -141,7 +149,7 @@ const workExperiences = {
       role: "React JS Developer",
       company: "Idea94",
       companylogo: idea94,
-      date: "May 2020 – August 2020",
+      date: "May 2021 – August 2020",
       descBullets: [
         "Done project in React JS and worked with React Flux architecture",
         "Working with Redux architecture using complex Object-Oriented concepts in improving the performance of the websites",
@@ -159,11 +167,47 @@ const workExperiences = {
   ],
 };
 const bigProjects = {
-  title: "Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Portfolio of Projects",
+  subtitle: "Collaborative Mobile App Development with Startups and Companies",
   projects: [
     {
-      // image: require("./assets/images/saayaHealthLogo.webp"),
+      image: workreap,
+      projectName: "Workreap React Native App",
+      projectDesc:
+        "Workreap React Native Mobile APP is an excellent CROSS Platform native app that is built to work with Workreap – Freelance Marketplace WordPress Theme.",
+      footerLink: [
+        {
+          name: "Visit Demo",
+          url: "https://codecanyon.net/item/workreap-react-native-android-and-ios-mobile-app/24906868",
+        },
+      ],
+    },
+    {
+      image: guupy,
+      projectName: "Guppy Chat App",
+      projectDesc:
+        "WP-Guppy is a well thought and clinically designed and developed WordPress chat plugin which has been engineered to fulfill the market needs. It is loaded with features without compromising on quality",
+      footerLink: [
+        {
+          name: "Visit Demo",
+          url: "https://play.google.com/store/apps/details?id=com.guppy&hl=en&gl=US",
+        },
+      ],
+    },
+    {
+      image: doctreat,
+      projectName: "Doctreat App",
+      projectDesc:
+        "Doctreat is a comprehensive healthcare online solution designed to bridge the gap between patients and medical professionals. This app is built around a central theme: to address the medical and health-related issues posted by patients and doctors alike. With its innovative features and meticulous code quality, Doctreat offers an exciting platform for seamless medical interactions and support",
+      footerLink: [
+        {
+          name: "Visit Demo",
+          url: "https://play.google.com/store/apps/details?id=com.doctreat&hl=en&gl=US",
+        },
+      ],
+    },
+    {
+      image: servento,
       projectName: "Servento React Native App",
       projectDesc:
         "Servento – A service finder and business listing React Native APP, which has a clean and contemporary design and awesome features.",
@@ -176,7 +220,7 @@ const bigProjects = {
       ],
     },
     {
-      // image: require("./assets/images/nextuLogo.webp"),
+      image: taskly,
       projectName: "Tasklay React Native App",
       projectDesc:
         "Tasklay is a freelancer marketplace React Native APP, this system would allow the sellers and buyers to register and create their profiles in a few simple steps. Sellers can get online orders for the posted services/gigs.",
@@ -187,18 +231,7 @@ const bigProjects = {
         },
       ],
     },
-    {
-      // image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Workreap React Native App",
-      projectDesc:
-        "Workreap React Native Mobile APP is an excellent CROSS Platform native app that is built to work with Workreap – Freelance Marketplace WordPress Theme.",
-      footerLink: [
-        {
-          name: "Visit Demo",
-          url: "https://codecanyon.net/item/workreap-react-native-android-and-ios-mobile-app/24906868",
-        },
-      ],
-    },
+   
   ],
   display: true, // Set false to hide this section, defaults to true
 };
