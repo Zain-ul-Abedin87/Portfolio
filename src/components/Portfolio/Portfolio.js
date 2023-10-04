@@ -40,7 +40,7 @@ const socialMediaLinks = {
   facebook: "https://www.facebook.com/zain.ulabedin.1401/",
   medium: "https://medium.com/@zainulabedin668",
   stackoverflow: "https://stackoverflow.com/users/story/18041509",
-  resumeLink: "",
+  resumeLink: "https://drive.google.com/drive/folders/1vRP5BZiSksaQlkEvxlFEuEr1UgyQIhhj",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true, // Set true to display this section, defaults to false

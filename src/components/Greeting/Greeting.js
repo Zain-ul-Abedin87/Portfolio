@@ -55,7 +55,7 @@ const Greeting = () => {
               <Button text="Contact me" href="#contact" />
               {/* {aboutMe.resumeLink && ( */}
               <Button
-                text="See my resume"
+                text="my resume"
                 newTab={true}
                 href={aboutMe.resumeLink}
               />
